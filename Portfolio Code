@@ -1,0 +1,235 @@
+
+
+Task 1 
+
+def range(num):
+   if num <= 100 or num >= 0 :
+       print("True")
+   else:
+       print("False")
+
+
+Task 2 
+
+def Cases(String):
+   lowercase = ''.join(c for c in String if c.islower())
+   lowerlength = len(lowercase)
+   length=len(String)
+   upperlength = length - lowerlength
+   print("There are ",upperlength,"uppercase letters and",lowerlength,"lowercase letters")
+
+Task 3 
+
+Name=input("Hello, what is your name")
+
+n=1
+Namelower = Name[n:]
+Nameupper = Name[0]
+
+Lower=Namelower.lower()
+Upper=Nameupper.upper()
+
+print(Upper+Lower)
+
+Task 4 
+
+def LastRemoval (String):
+   if len(String) < 2:
+       print(String)
+   else:
+       Value = String[:-1]
+       print(Value)
+
+
+Task 5
+ def DegreesToF(Degrees):
+   Degrees1 = float(Degrees)
+   Fahrenheit1 = (Degrees1 * 1.8) + 32
+   print(Degrees,"in Fahrenheit is",Fahrenheit1)
+
+def FahrenheitToC(Fahrenheit):
+   F2 = float(Fahrenheit)
+   C2 = (F2 - 32) * (5/9)
+   print(Fahrenheit,"in Degrees is",C2)
+
+
+
+
+Task 6
+
+degrees = input("Input degrees")
+index = degrees.find("C")
+if degrees.find("C") != -1:
+   numbers = degrees[0:index]
+   numbers = float(numbers)
+   fahrenheit = (numbers * 1.8) + 32
+   print(fahrenheit,"C")
+  
+else:
+   print("Value doesn't have a C at the end, Please retry.")
+
+
+
+
+Task 7 
+
+import statistics
+import sys
+degrees1 = input("Input degrees")
+degrees2 = input("Input degrees")
+degrees3 = input("Input degrees")
+degrees4 = input("Input degrees")
+degrees5 = input("Input degrees")
+degrees6 = input("Input degrees")
+
+
+if degrees1.find("C") != -1:
+   index1 = degrees1.find("C")
+   numbers1 = degrees1[0:index1]
+   fn1 = float(numbers1)
+
+else:
+   sys.exit("No C present")
+
+
+
+if degrees2.find("C") != -1:
+   index2 = degrees2.find("C")
+   numbers2 = degrees2[0:index2]
+   fn2 = float(numbers2)
+
+else:
+   sys.exit("No C present")
+
+if degrees3.find("C") != -1:
+   index3 = degrees3.find("C")
+   numbers3 = degrees3[0:index3]
+   fn3 = float(numbers3)
+
+else:
+   sys.exit("No C present")
+ 
+if degrees4.find("C") != -1:
+   index4 = degrees4.find("C")
+   numbers4 = degrees4[0:index4]
+   fn4 = float(numbers4)
+
+else:
+   sys.exit("No C present")
+
+if degrees5.find("C") != -1:
+   index5 = degrees5.find("C")
+   numbers5 = degrees5[0:index5]
+   fn5 = float(numbers5)
+
+else:
+   sys.exit("No C present")
+
+if degrees6.find("C") != -1:
+   index6 = degrees6.find("C")
+   numbers6 = degrees6[0:index6]
+   fn6 = float(numbers6)
+
+else:
+   sys.exit("No C present")
+
+maxV = max(fn1,fn2,fn3,fn4,fn5,fn6)
+minV = min(fn1,fn2,fn3,fn4,fn5,fn6)
+list1 = [fn1,fn2,fn3,fn4,fn5,fn6]
+meanV = statistics.mean(list1)
+
+print(maxV)
+print(minV)
+print(meanV)
+
+Task 8
+
+import statistics
+import sys
+degrees1 = input("Input degrees")
+degrees2 = input("Input degrees")
+degrees3 = input("Input degrees")
+degrees4 = input("Input degrees")
+degrees5 = input("Input degrees")
+degrees6 = input("Input degrees")
+
+
+if degrees1.find("C") != -1:
+   index1 = degrees1.find("C")
+   numbers1 = degrees1[0:index1]
+   fn1 = float(numbers1)
+
+elif degrees1 == (""):
+   sys.exit("No input detected")
+
+else:
+   sys.exit("No C present")
+
+
+
+if degrees2.find("C") != -1:
+   index2 = degrees2.find("C")
+   numbers2 = degrees2[0:index2]
+   fn2 = float(numbers2)
+
+elif degrees1 == (""):
+   sys.exit("No input detected")
+
+else:
+   sys.exit("No C present")
+
+if degrees3.find("C") != -1:
+   index3 = degrees3.find("C")
+   numbers3 = degrees3[0:index3]
+   fn3 = float(numbers3)
+
+elif degrees1 == (""):
+   sys.exit("No input detected")
+
+else:
+   sys.exit("No C present")
+
+if degrees4.find("C") != -1:
+   index4 = degrees4.find("C")
+   numbers4 = degrees4[0:index4]
+   fn4 = float(numbers4)
+
+elif degrees1 == (""):
+   sys.exit("No input detected")
+
+else:
+   sys.exit("No C present")
+
+if degrees5.find("C") != -1:
+   index5 = degrees5.find("C")
+   numbers5 = degrees5[0:index5]
+   fn5 = float(numbers5)
+
+elif degrees1 == (""):
+   sys.exit("No input detected")
+
+else:
+   sys.exit("No C present")
+
+if degrees6.find("C") != -1:
+   index6 = degrees6.find("C")
+   numbers6 = degrees6[0:index6]
+   fn6 = float(numbers6)
+
+elif degrees1 == (""):
+   sys.exit("No input detected")
+
+else:
+   sys.exit("No C present")
+
+maxV = max(fn1,fn2,fn3,fn4,fn5,fn6)
+minV = min(fn1,fn2,fn3,fn4,fn5,fn6)
+list1 = [fn1,fn2,fn3,fn4,fn5,fn6]
+meanV = statistics.mean(list1)
+
+print(maxV)
+print(minV)
+print(meanV)
+
+
+
